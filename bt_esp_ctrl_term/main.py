@@ -3,14 +3,14 @@ import asyncio
 from bleak import BleakClient
 
 
-esp_uuid = "13ba3f62-c58d-43e9-b127-a47bb86bef72"
+esp_uuid = "68f7976c-8b5d-7217-7b1f-e308c7713263"
 
 char_uuid = {
     "A": "c54f2186-0d10-44c6-9a91-63a98b675999",
     "B": "b03f8c79-d53d-4158-be1d-7d878596db58",
 }
 
-operations = {"stA": 1, "stB": 2, "clA": 3, "clB": 4, "gtA": 5, "gtB": 6}
+operations = {"stA": 1, "stB": 2, "clA": 3, "clB": 4}
 
 
 async def main(operation: int):
